@@ -12,14 +12,14 @@
 body {
   color: var(--primary-text);
   background-color: var(--white);
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   max-width: 1600px;
 }
 
-.list {
-  list-style: none;
-}
+li {list-style: none;}
+
+
 
 a {
   text-decoration: none
@@ -34,18 +34,14 @@ a {
 
 .logo {
 color:var(--active);
-font-family: Raleway, sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 1.19;}
+}
 
 .logo-header {
 color: var(--black);
 text-decoration: none;
-font-family: Raleway, sans-serif;
+font-family: "Raleway", sans-serif;
 font-style: normal;
-font-weight: bold; 
+font-weight: 700; 
 font-size: 26px;
 line-height: 1.19;
 }
@@ -53,9 +49,9 @@ line-height: 1.19;
 .logo-footer {
   color: var(--white);
   text-decoration: none;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: bold; 
+  font-weight: 700; 
   font-size: 26px;
   line-height: 1.19;
   }
@@ -81,7 +77,6 @@ color: var(--primary-text);
 .studia:hover,
 .studia:focus {
 color: var(--active);
-text-decoration:underline;
 }
 
 .portfolio {
@@ -90,7 +85,6 @@ color: var(--primary-text);}
 .portfolio:hover,
 .portfolio:focus {
 color: var(--active);
-text-decoration:underline;
 }
 
 .contacts {
@@ -100,7 +94,6 @@ color: var(--primary-text);
 .contacts:hover,
 .contacts:focus {
 color: var(--active);
-text-decoration:underline;
 }
 
 /*address*/
@@ -113,7 +106,6 @@ font-size: 14px;
 .header-tel:hover,
 .header-tel:focus {
 color: var(--active);
-text-decoration: underline;
 }
 
 .header-mail {
@@ -124,7 +116,6 @@ font-size: 14px;}
 .header-mail:hover,
 .header-mail:focus {
 color: var(--active);
-text-decoration:underline;
 }
 
 /*Main*/
@@ -148,7 +139,7 @@ text-decoration:underline;
   color: var(--white);
   background-color: var(--active);
   border-color: var(--active);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
@@ -158,15 +149,17 @@ text-decoration:underline;
 
 .buttons {
   color: var(--primary-text);
-  background-color: #F5F4FA;
-  border-color: #F5F4FA;
-  font-weight: bold;
+  background-color: var(--gray-bgc);
+  border-color: var(--gray-bgc);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
 }
+
+.invisible-title {color: var(--white)}
 
 .buttons:hover {
 background-color: var(--active);
@@ -192,13 +185,13 @@ color:var(--white)
 
 /*what we do*/
 h2 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 
-h3 {font-weight: bold;
+h3 {font-weight: 700;
   font-size: 16px;
   line-height: 1.18;}
 
@@ -234,5 +227,4 @@ h3 {font-weight: bold;
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--active);
-  text-decoration:underline
 }
