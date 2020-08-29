@@ -320,13 +320,14 @@ line-height: 1.71;
 font-style: normal;
 }
 
+.street {
+  margin-top:20px;
+}
+
 .address .ctcs {color:var(--ctcs);
 }
 
-.ctcs {color:var(--ctcs);
-}
-
-.ctcs:not(:last-child) {
+.adress .ctcs:not(:last-child) {
   margin-bottom: 9px;}
 
 .footer .logo-header {
