@@ -33,9 +33,6 @@ body {
   margin: 0px;
 }
 
-.list .link {margin-right: 50px;}
-
-
 img {
   display: block;
   max-width: 100%;
@@ -45,8 +42,6 @@ img {
 .link {
   text-decoration: none
 }
-
-
 
 /* Navigation*/
 
@@ -74,19 +69,18 @@ img {
   justify-content: space-between; 
 }
   
-.navigation .link {
+.site-navigation .link {
 	display: block;
-	padding-top: 32px;
-  padding-bottom: 32px;
+	padding: 32px 0 32px;
   font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
 }
 
-.site-navigation .item:not(:last-child)
-.ctcs .item:not(:last-child){
-  padding-right: 50px;}
+.site-navigation .item:not(:last-child),
+.ctcs .item:not(:last-child) {
+	padding-right: 50px;}
 
 /* logo*/
 
@@ -115,8 +109,6 @@ color: var(--active);
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-margin: 0;
-padding: 0;
 }
 
 /*address*/
@@ -138,14 +130,12 @@ color: var(--active);
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 15px;
-  padding-right: 15px;
+	padding:0 15px;
 }
 
 .effective-desisions {
   background-color: var(--secondary-text);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0 200px;
   text-align: center;
   background: var(--background-dark);
 }
@@ -157,7 +147,7 @@ color: var(--active);
   line-height: 1.36;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  margin-bottom: 30px;
+  margin-top: 0px;
   }
 
 /*button*/
@@ -221,8 +211,7 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
-margin-top: 0px;
-margin-bottom: 10px;
+margin: 0 0 10px;
 }
 
 .advantages-text {
@@ -237,31 +226,26 @@ padding-bottom: 94px;}
   
 .service-title {
 color: var(--primary-text);
-margin-top: 0;
-margin-bottom: 50px;
+margin: 0 0 50px;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 }
 
-.sevice .list {display: flex;}
+.service .list {display: flex;}
 
 .service .item:not(:last-child) {
 margin-right: 30px;}
 
-
-
 /*Team*/
 .our-team {
 background-color: var(--gray-bgc);
-padding-top: 94px;
-padding-bottom: 94px;
+padding: 94px 0 94px;
 font-size: 16px;
 }
 
 .our-team .list {
-display: flex;
-border-radius: 0px 0px 4px 4px;}
+display: flex;}
 
 .our-team .item:not(:last-child)
 {margin-right: 30px;}
@@ -270,11 +254,15 @@ border-radius: 0px 0px 4px 4px;}
 {display: flex;
 flex-direction: column;
 align-items: center;
-background-color:var(--white);}
+background-color:var(--white);
+box-shadow: 
+0px 1px 3px rgba(0, 0, 0, 0.12), 
+0px 1px 1px rgba(0, 0, 0, 0.14), 
+0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;}
   
 .team-title {
-margin-top: 0;
-margin-bottom: 50px;
+margin: 0 0 50px;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
@@ -282,7 +270,6 @@ color: var(--primary-text)}
 
 .team-name {
 margin-top: 30px;
-margin-bottom: 10px;
 line-height: 1.18;
 color: var(--primary-text);
 }
@@ -320,24 +307,22 @@ line-height: 1.71;
 font-style: normal;
 }
 
-.street {
-  margin-top:20px;
+.address .contacts {color:var(--ctcs);
 }
 
-.address .ctcs {color:var(--ctcs);
+.address a:not(:last-child) {
+  margin-bottom: 9px;
 }
 
-.adress .ctcs:not(:last-child) {
-  margin-bottom: 9px;}
+.street {padding-top: 20px;}
 
 .footer .logo-header {
   color: var(--white);
 }
 
 .examples {
-	padding-top: 94px;
-  padding-bottom: 94px;
-    border-top: 1px solid var(--port-line);
+	padding: 94px 0 94px;
+  border-top: 1px solid var(--port-line);
 }
 
 .nav-list {
@@ -380,8 +365,8 @@ font-style: normal;
 	width: calc((100% - 60px) / 3);
 	margin-right: 30px;
 
-	background-color: var(--primary-bg-color);
-	border: 1px solid var(--secondary-bg-color);
+	background-color: var(--white);
+	border: 1px solid var(--gray-bgc);;
 }
 
 .examples-list li:nth-child(3n) {
@@ -393,9 +378,7 @@ font-style: normal;
 }
 
 .examples-title {
-	margin-bottom: 4px;
-	margin-left: 24px;
-	margin-top: 20px;
+  margin: 20px 0 4px 24px;
 	color: var(--primary-text);
 	font-weight: 700;
 	font-size: 18px;
@@ -403,10 +386,10 @@ font-style: normal;
   letter-spacing: 0.06em;}
 
 .examples-text {
-	margin-left: 24px;
-  padding-bottom: 20px;
   margin-top: 0;
 	margin-bottom: 0;
+	margin-left: 24px;
+  padding-bottom: 20px;
   color: var(--secondary-text);
 	font-size: 16px;
   line-height: 1.87;
