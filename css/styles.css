@@ -189,8 +189,7 @@ color:var(--white)
 
 /*advantages*/
 .advantages {
-padding-top: 94px;
-padding-bottom: 94px;}
+padding: 94px 0 94px;}
   
 .advantages-list {
 display: flex;
